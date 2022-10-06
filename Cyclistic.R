@@ -64,12 +64,12 @@ stations_v01 <- stations_v00 %>%
 
 #   Inspect distinct values per var and list findings - check R Markdown report
 
-stations_v01 <- stations_v01 %>% filter(valid_id != "13") %>% 
+stations_v02 <- stations_v01 %>% filter(valid_id != "13") %>% 
   filter(station != "public_rack_laflin_st_and51st_st")
 
 #   Check for NAs
 
-any_na(stations_v01) 
+any_na(stations_v02) 
 
 #   No NAs - Hold stations data
 
